@@ -11,6 +11,7 @@ let alertbtn=document.getElementById("alert");
 let loader=document.getElementById("loader");
 let bdyopacity=document.getElementById("bdyopacity");
 let pswd=document.getElementById("pswdindicator");
+let btnclose=document.getElementById("btnclose");
 
 element.addEventListener("mouseup", rfunc=()=>{
     document.getElementById("rangeval").innerHTML = element.value;
@@ -86,6 +87,12 @@ copybtn.addEventListener("click",mtoclip=()=>{
     {
       inpval.select();
       document.execCommand("copy");
+      alertbtn.classList.add("d-flex");
       alertbtn.style.display="block";
     }
+});
+
+btnclose.addEventListener("click",closealert=()=>{
+  alertbtn.classList.remove("d-flex");
+  alertbtn.style.display="none";
 });
