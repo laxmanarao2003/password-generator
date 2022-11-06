@@ -16,6 +16,9 @@ let btnclose=document.getElementById("btnclose");
 element.addEventListener("mouseup", rfunc=()=>{
     document.getElementById("rangeval").innerHTML = element.value;
 });
+element.addEventListener("focus", rfunc2=()=>{
+    document.getElementById("rangeval").innerHTML = element.value;
+});
 
 gnrate.addEventListener("click",func1=()=> {
   if(upperid.checked==false && lowerid.checked==false &&numsid.checked==false &&symbsid.checked==false)
