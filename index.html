@@ -15,9 +15,6 @@
       <!-------------------------External CSS ---------------------------------->
       <link rel="stylesheet" href=".\passwordstyle.css" type="text/css">
 
-      <!------------------------------- JQUERY-JS-CDN -------------------------->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
       <!----------------------------- Fontawesome-JS-CDN -------------------------->
       <script src="https://kit.fontawesome.com/832f4883ab.js" crossorigin="anonymous"></script>
 
@@ -29,13 +26,12 @@
 
       <!------------------------ BOOTSTRAP-JQuery-CDN -------------------------->
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-   
    </head>
 <body oncontextmenu="return false" id="bdyopacity">
    <div class="d-flex justify-content-center mt-3">
-      <div class="alert alert-success alert-dismissible fade show w-75" id="alert" style="display:none;">
+      <div class="alert alert-success fade show w-75" id="alert" style="display:none;">
          <p class="">Generated Password copied <strong>successfully</strong></p>
-         <button class="btn btn-close" data-bs-dismiss="alert"></button>
+         <button class="btn btn-close ms-auto" id="btnclose"></button>
       </div>
    </div>
    <div class="container-xl container-lg container-md container-fluid d-flex justify-content-center align-items-center mt-4">
@@ -92,5 +88,8 @@
    </div>
    <!-------------------------External JS ---------------------------------->
    <script src="passwordscript.js"></script>
+
+   <!------------------------------- JQUERY-JS-CDN -------------------------->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>
